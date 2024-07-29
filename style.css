@@ -25,6 +25,7 @@ html {
 body {
     background-color: var(--background-color);
 color: #333;
+box-sizing: border-box;
 }
 
 .card {
@@ -44,6 +45,17 @@ color: #333;
    }
    header a {
     color: white;
+   }
+   .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   }
+   .navbar a {
+    display: inline-block;
+    padding: 1rem;
+    margin: 1rem 0;
    }
 /* Header ends here */
 
