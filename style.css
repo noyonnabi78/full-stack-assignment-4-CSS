@@ -38,25 +38,33 @@ box-sizing: border-box;
 /* Header start here */
    header {
     background-color: var(--primary-color);
-    height: auto;
-    padding: 1rem;
-    text-align: center;
-    
+    height: 100px;
+    width: 100%;
+     position: sticky;
+    /* top: 0;
+    left: 0; */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
    }
    header a {
     color: white;
    }
-   .navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   
+   nav ul li  {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 0.8rem;
     
    }
-   .navbar a {
-    display: inline-block;
-    padding: 1rem;
-    margin: 1rem 0;
-   }
+   
+ ul li:hover {
+    background-color: rgb(3, 105, 37);
+    transition: all 1s;
+    transform: translate(3%);
+ }
+ 
 /* Header ends here */
 
 /* Main start here */
@@ -68,6 +76,7 @@ main {
     text-align: center;
     box-sizing: border-box;
 }
+
 p {
     text-align: start;
 }
@@ -143,14 +152,40 @@ form {
     margin-left: 7.3rem;
 }
 
+
 /* Main ends here */
 /* Footer start here */
    #footer {
     background-color: var(--primary-color);
-    height: auto;
+    height: 100px;
     text-align: center;
-    padding-bottom: 3rem;
+    padding-bottom: 1rem;
     padding-top: 1rem;
     color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
    }
+   .social-media ul  {
+    display: flex;
+   }
+   .social-media ul li {
+    padding: 0.5rem 1rem;
+    border-radius: 0.8rem;
+    cursor: pointer;
+   }
+   .menu ul  {
+    display: flex;
+   }
+   .menu ul li {
+    padding: 0.5rem 1rem;
+    border-radius: 0.8rem;
+   }
+   .menu ul li a{
+    color: white;
+   }
+   .copy-right {
+    padding: 1rem;
+   }
+   
 /* Footer ends here */
